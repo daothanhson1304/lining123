@@ -1,0 +1,233 @@
+.details{
+  width: 100%;
+  position: relative;
+}
+.details_product{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+
+}
+.details_left{
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  /* flex: 1; */
+  max-width: 300px;
+}
+.details_left .text h2{
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 40px;
+  margin: 10px 0;
+}
+.details_left .text p{
+  color: rgba(255,255,255,0.5);
+  font-size: 16px;
+}
+.details_left button{
+  width: 140px;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 18px;
+  background: #9bdc28;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+.details_right{
+  margin-right: 30px;
+}
+.details_right .price{
+  color: #9bdc28;
+  font-size: 30px;
+}
+.details_right .colorss{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.details_right .colorss span{
+  margin-bottom: 10px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 600;
+}
+.color2{
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  border: none;
+}
+.details_right .sizes{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.size_text{
+  margin-bottom: 10px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 600;
+}
+.size_content{
+  margin: 10px 10px 0 0;
+
+}
+.size_content span{
+  width: 40px;
+  height: 40px;
+  border: 1px solid #9bdc28;
+  margin-right: 10px;
+  padding: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+.size:hover{
+  background: #9bdc28;
+}
+.nike::after{
+  position: absolute;
+  content: "Nike";
+  font-size: 350px;
+  font-weight: 800;
+  top: 10%;
+  left: 20%;
+  color: rgba(255,255,255,0.04);
+  font-style: italic;
+  z-index: -1;
+
+}
+.details_img{
+  position: absolute;
+  top: 20%;
+  left: 28%;
+  object-fit: contain;
+  width: 600px;
+  height: 600px;
+  z-index: 1000;
+  transition:  0.5s;
+  cursor: pointer;
+  transform: translateY(-10%) rotate(15deg);
+  z-index: -1;
+}
+.details_img:hover{
+  top: 5%;
+  transform: translateY(0%) rotate(5deg);
+}
+@media (max-width: 650px){
+  .details_left {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    /* flex: 1; */
+    max-width: 150px;
+  }
+  .details_left .text p {
+    color: rgba(255,255,255,0.5);
+    font-size: 12px;
+  }
+  .details_left button {
+    width: 80px;
+    padding: 5px 10px;
+    color: #fff;
+    font-size: 12px;
+    background: #9bdc28;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+.details_right {
+  margin-right: 10px;
+  max-width: 150px;
+  text-align: right;
+}
+.details_right .price {
+  color: #9bdc28;
+  font-size: 16px;
+}.details_right .colorss span {
+  margin-bottom: 10px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+}.color2 {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  border: none;
+}.size_text {
+  margin-bottom: 10px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14;
+  font-weight: 600;
+}.size_content span {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #9bdc28;
+  color: #fff;
+  cursor: pointer;
+  margin-right:5px ;
+  padding: 2px;
+}.nike::after {
+  position: absolute;
+  content: "Nike";
+  font-size: 200px;
+  font-weight: 800;
+  top: 30%;
+  left: 0;
+  color: rgba(255,255,255,0.04);
+  font-style: italic;
+  z-index: -1;
+}.details_img {
+  position: absolute;
+  top: 35%;
+  left: 25%;
+  object-fit: contain;
+  width: 300px;
+  height: 300px;
+  z-index: 1000;
+  transition: 0.5s;
+  cursor: pointer;
+  transform: translateY(-10%) rotate(
+15deg
+);
+  z-index: -1;
+}
+.details_left .text h2 {
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 20px;
+  margin: 10px 0;
+}
+.size_text {
+  margin-bottom: 10px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+}
+.cart_payment {
+  padding: 20px 5px;
+}
+.cart_payment .total {
+  font-size: 14px;
+
+}
+.cart_payment button {
+  padding: 8px 15px;
+}
+}
